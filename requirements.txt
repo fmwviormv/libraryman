@@ -1,0 +1,3 @@
+-e 3rdparty/pytz
+-e 3rdparty/django
+-e src
