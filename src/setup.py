@@ -11,7 +11,7 @@ setup(
 
 	packages = find_packages(),
 	include_package_data = True,
-	install_requires = ['Django'],
+	install_requires = ['Django>=2.1,<2.2'],
 	entry_points = {
 		'console_scripts': [
 			'libraryman = conf.scripts:main'
