@@ -1,4 +1,5 @@
 import os
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!#qvxd$p$ugao#47)s_ht(_@pag0b=ze%l$=)$vj!(*d52ze%!'
@@ -16,6 +17,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
 	'django.middleware.security.SecurityMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
+	'django.middleware.locale.LocaleMiddleware',
 	'django.middleware.common.CommonMiddleware',
 	'django.middleware.csrf.CsrfViewMiddleware',
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -60,7 +62,14 @@ AUTH_PASSWORD_VALIDATORS = [
 	{ 'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator' },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
+LANGUAGES = [
+	('en', _('English')),
+	('fa', _('Persian'))
+]
+LOCALE_PATHS = [
+	os.path.join(BASE_DIR, 'locale')
+]
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
