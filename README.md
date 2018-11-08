@@ -22,4 +22,6 @@ Then install requirements:
 
 Finally run:
 
+	$ libraryman migrate
+	$ libraryman createsuperuser
 	$ libraryman runserver
