@@ -1,6 +1,19 @@
 Library Management System
 =========================
 
+This is going to be a Library Management System (under development).
+There is a plan for these functionalities:
+
+  * Add/Edit/Remove Book/Author/Publisher,
+
+  * User Registeration by admin,
+
+  * Users can request to borrowing a book or extending borrowing,
+
+  * Admin can approve or reject any request,
+
+  * ...
+
 How to run
 ==========
 
