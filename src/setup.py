@@ -14,7 +14,7 @@ setup(
 	install_requires = ['Django>=2.1,<2.2'],
 	entry_points = {
 		'console_scripts': [
-			'libraryman = conf.scripts:main'
+			'libraryman = conf:manage'
 		]
 	},
 	classifiers = [
@@ -28,7 +28,8 @@ setup(
 		'Natural Language :: Persian',
 		'Operating System :: OS Independent',
 		'Programming Language :: Python :: 3 :: Only',
-		'Programming Language :: Python :: 3.8',
+		'Programming Language :: Python :: 3.6',
+		'Programming Language :: Python :: 3.7',
 		'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
 		'Topic :: Internet :: WWW/HTTP :: WSGI',
 	])
